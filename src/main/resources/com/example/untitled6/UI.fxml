@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1590.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.untitled6.Controller">
+   <children>
+      <Canvas fx:id="canvas" height="255.0" onMousePressed="#onCanvasPressed" onMouseReleased="#onCanvasReleased" width="1590.0" />
+      <HBox alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="145.0" prefWidth="1590.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <Button mnemonicParsing="false" onAction="#onToXButtonClick" prefHeight="75.0" prefWidth="500.0" style="-fx-background-color: #f0847A;" text="To X">
+               <HBox.margin>
+                  <Insets right="83.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onToGraphButtonClick" prefHeight="75.0" prefWidth="500.0" style="-fx-background-color: #6da0e3;" text="To Graph" />
+            <TextArea fx:id="textArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="145.0" prefWidth="525.0" snapToPixel="false" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
